@@ -20,23 +20,23 @@ html {
 
 body {
   color: #615551;
-  min-height: calc(100vh - 8vw);
   background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: calc(100vh - 8vw);
   font-family: Nunito Sans, sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
 
 .container {
-  max-width: 120rem;
-  min-height: 117rem;
   background-color: #fff;
   border-radius: 9px;
   grid-template: "head head" 10rem
                  "list recipe" minmax(100rem, auto)
                  / 1fr 2fr;
+  max-width: 120rem;
+  min-height: 117rem;
   margin: 4vw auto;
   display: grid;
   overflow: hidden;
@@ -45,8 +45,8 @@ body {
 
 @media only screen and (width <= 78.15em) {
   .container {
-    max-width: 100%;
     border-radius: 0;
+    max-width: 100%;
     margin: 0;
   }
 }
@@ -82,9 +82,9 @@ body {
 }
 
 .btn svg {
-  height: 2.25rem;
-  width: 2.25rem;
   fill: currentColor;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .btn--small, .btn--small:link, .btn--small:visited {
@@ -95,9 +95,9 @@ body {
 }
 
 .btn--small svg, .btn--small:link svg, .btn--small:visited svg {
-  height: 1.75rem;
-  width: 1.75rem;
   fill: currentColor;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .btn--inline {
@@ -115,9 +115,9 @@ body {
 }
 
 .btn--inline svg {
-  height: 1.6rem;
-  width: 1.6rem;
   fill: currentColor;
+  width: 1.6rem;
+  height: 1.6rem;
   margin: 0 .2rem;
 }
 
@@ -136,13 +136,13 @@ body {
 
 .btn--round {
   cursor: pointer;
-  height: 4.5rem;
-  width: 4.5rem;
   background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
   border: none;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
   transition: all .2s;
   display: flex;
 }
@@ -156,23 +156,23 @@ body {
 }
 
 .btn--round svg {
-  height: 2.5rem;
-  width: 2.5rem;
   fill: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .btn--tiny {
-  height: 2rem;
-  width: 2rem;
   cursor: pointer;
   background: none;
   border: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 .btn--tiny svg {
-  height: 100%;
-  width: 100%;
   fill: #f38e82;
+  width: 100%;
+  height: 100%;
   transition: all .3s;
 }
 
@@ -213,9 +213,9 @@ body {
 }
 
 .spinner svg {
-  height: 6rem;
-  width: 6rem;
   fill: #f38e82;
+  width: 6rem;
+  height: 6rem;
   animation: 2s linear infinite rotate;
 }
 
@@ -237,9 +237,9 @@ body {
 }
 
 .message svg, .error svg {
-  height: 3rem;
-  width: 3rem;
   fill: #f38e82;
+  width: 3rem;
+  height: 3rem;
   transform: translateY(-.3rem);
 }
 
@@ -280,9 +280,9 @@ body {
 
 .search__field {
   color: inherit;
-  width: 30rem;
   background: none;
   border: none;
+  width: 30rem;
   font-family: inherit;
   font-size: 1.7rem;
 }
@@ -326,13 +326,13 @@ body {
 }
 
 .nav__btn {
-  height: 100%;
   color: inherit;
   text-transform: uppercase;
   cursor: pointer;
   background: none;
   border: none;
   align-items: center;
+  height: 100%;
   padding: 0 1.5rem;
   font-family: inherit;
   font-size: 1.4rem;
@@ -342,9 +342,9 @@ body {
 }
 
 .nav__btn svg {
-  height: 2.4rem;
-  width: 2.4rem;
   fill: #f38e82;
+  width: 2.4rem;
+  height: 2.4rem;
   margin-right: .7rem;
   transform: translateY(-1px);
 }
@@ -359,10 +359,10 @@ body {
 
 .bookmarks {
   z-index: 10;
-  width: 40rem;
   visibility: hidden;
   opacity: 0;
   background-color: #fff;
+  width: 40rem;
   padding: 1rem 0;
   transition: all .5s .2s;
   position: absolute;
@@ -376,8 +376,8 @@ body {
 
 .bookmarks__field {
   cursor: pointer;
-  height: 100%;
   align-items: center;
+  height: 100%;
   padding: 0 4rem;
   transition: all .3s;
   display: flex;
@@ -411,10 +411,10 @@ body {
 }
 
 .preview__fig {
-  height: 5.8rem;
   backface-visibility: hidden;
   border-radius: 50%;
   flex: 0 0 5.8rem;
+  height: 5.8rem;
   margin-right: 2rem;
   position: relative;
   overflow: hidden;
@@ -422,10 +422,10 @@ body {
 
 .preview__fig:before {
   content: "";
-  height: 100%;
-  width: 100%;
   opacity: .4;
   background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+  width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   top: 0;
@@ -433,18 +433,18 @@ body {
 }
 
 .preview__fig img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   transition: all .3s;
   display: block;
 }
 
 .preview__data {
-  width: 100%;
   grid-template-columns: 1fr 2rem;
   align-items: center;
   row-gap: .1rem;
+  width: 100%;
   display: grid;
 }
 
@@ -452,9 +452,9 @@ body {
   color: #f38e82;
   text-transform: uppercase;
   text-overflow: ellipsis;
-  max-width: 25rem;
   white-space: nowrap;
   grid-column: 1 / -1;
+  max-width: 25rem;
   font-size: 1.45rem;
   font-weight: 600;
   overflow: hidden;
@@ -468,21 +468,21 @@ body {
 }
 
 .preview__user-generated {
-  height: 2rem;
-  width: 2rem;
   background-color: #eeeae8;
   border-radius: 10rem;
   justify-content: center;
   align-items: center;
+  width: 2rem;
+  height: 2rem;
   margin-left: auto;
   margin-right: 1.75rem;
   display: flex;
 }
 
 .preview__user-generated svg {
-  height: 1.2rem;
-  width: 1.2rem;
   fill: #f38e82;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .search-results {
@@ -531,17 +531,17 @@ body {
 }
 
 .recipe__fig {
-  height: 32rem;
   transform-origin: top;
+  height: 32rem;
   position: relative;
 }
 
 .recipe__fig:before {
   content: "";
-  height: 100%;
-  width: 100%;
   opacity: .6;
   background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+  width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   top: 0;
@@ -549,17 +549,17 @@ body {
 }
 
 .recipe__img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
 }
 
 .recipe__title {
   color: #fff;
   text-transform: uppercase;
-  width: 50%;
   text-align: center;
+  width: 50%;
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.95;
@@ -600,9 +600,9 @@ body {
 }
 
 .recipe__info-icon {
-  height: 2.35rem;
-  width: 2.35rem;
   fill: #f38e82;
+  width: 2.35rem;
+  height: 2.35rem;
   margin-right: 1.15rem;
 }
 
@@ -618,21 +618,21 @@ body {
 }
 
 .recipe__user-generated {
-  height: 4rem;
-  width: 4rem;
   background-color: #eeeae8;
   border-radius: 10rem;
   justify-content: center;
   align-items: center;
+  width: 4rem;
+  height: 4rem;
   margin-left: auto;
   margin-right: 1.75rem;
   display: flex;
 }
 
 .recipe__user-generated svg {
-  height: 2.25rem;
-  width: 2.25rem;
   fill: #f38e82;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .recipe__ingredients {
@@ -657,10 +657,10 @@ body {
 }
 
 .recipe__icon {
-  height: 2rem;
-  width: 2rem;
   fill: #f38e82;
   flex: none;
+  width: 2rem;
+  height: 2rem;
   margin-top: .1rem;
   margin-right: 1.1rem;
 }
@@ -689,10 +689,10 @@ body {
 }
 
 .add-recipe-window {
-  width: 100rem;
   z-index: 1000;
   background-color: #fff;
   border-radius: 9px;
+  width: 100rem;
   padding: 5rem 6rem;
   transition: all .5s;
   position: fixed;
@@ -715,12 +715,11 @@ body {
 }
 
 .overlay {
-  width: 100%;
-  height: 100%;
-  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 100;
   background-color: #0006;
+  width: 100%;
+  height: 100%;
   transition: all .5s;
   position: fixed;
   top: 0;
@@ -787,5 +786,4 @@ body {
   grid-column: 1 / -1;
   justify-self: center;
 }
-
 /*# sourceMappingURL=index.f7626f62.css.map */
